@@ -1,0 +1,45 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:#dfdfdf ;
+}
+.view{
+   margin-left: auto;
+   margin-right: auto;
+}
+.content{
+    padding: 1rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #f8f8f8;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10pt;
+
+}
+.content h1{
+    padding-left: 2%;
+    margin: 0;
+    font-size: 26pt;
+}
+.pagination{
+    align-items:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    width: 100%;
+    padding: 10pt;
+}
+.pagination button{
+    margin-top: 10pt;
+    background-color: rgb(95, 43, 226);
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: 12pt;
+    padding: 5pt;
+}
