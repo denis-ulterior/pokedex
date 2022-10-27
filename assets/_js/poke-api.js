@@ -10,6 +10,9 @@ convertPokemonApiJsonToPokemon (pokemonJson){
     pokemon.name = pokemonJson.name
     pokemon.types = types
     pokemon.photo = pokemonJson.sprites.other.dream_world.front_default
+    pokemon.abilities = pokemonJson.abilities.map(slot=>slot.ability.name)
+    pokemon.height = pokemonJson.height
+    pokemon.base_experience = pokemonJson.base_experience
     return pokemon
 },
 
@@ -26,6 +29,9 @@ getPokemons:async function(offset,limit) {
         .then(jsonBody=>jsonBody.results)
         .then(pokemons => pokemons.map(PokeAPI.getPokemon))
         .then(detailRequests => Promise.all(detailRequests))
-        .then(pokemonsDetails => pokemonsDetails)
+        .then(pokemonsDetails => pokemonsDetails);
+
+       
     }
+
 }

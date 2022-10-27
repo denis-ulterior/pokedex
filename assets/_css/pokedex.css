@@ -183,3 +183,12 @@ height: 90%;
 .fairy {
     background-color: #f9aec7;
 }
+.ability {
+    background: rebeccapurple;
+    color: white;
+    padding: 5pt;
+    max-width: 100pt;
+    border-radius: 5pt;
+    margin-bottom: 5pt;
+    text-align: center;
+  }
